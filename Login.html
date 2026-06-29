@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Login - Doces Mania</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff3e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.caixa {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #8B4513;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #5c4033;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background: #ff944d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #ff7a1a;
+}
+</style>
+</head>
+
+<body>
+
+<div class="caixa">
+    <h1>🍩 Doces Mania</h1>
+    <p>Bem-vindo ao Doces Mania,<br>faça seu login 🍰</p>
+
+    <input type="text" placeholder="Usuário">
+    <input type="password" placeholder="Senha">
+
+    <button onclick="entrar()">Entrar</button>
+</div>
+
+<script>
+function entrar() {
+    var usuario = document.querySelector("input[type='text']").value;
+    var senha = document.querySelector("input[type='password']").value;
+
+    if (usuario === "etecdoce" && senha === "etec") {
+        window.location.href = "docesmania.html";
+    } else {
+        alert("Usuário ou senha incorretos!");
+    }
+}
+</script>
+
+</body>
+</html>
