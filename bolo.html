@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Receita de Bolo</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    background-image: url("https://images.unsplash.com/photo-1578985545062-69928b1d9587");
+    background-size: cover;
+    background-position: center;
+}
+
+/* CAIXA */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* TÍTULO */
+h1 {
+    text-align: center;
+    color: #8B4513;
+}
+
+/* TEXTO */
+p, li {
+    color: #333;
+}
+
+/* 🔥 BOTÃO QUE VOCÊ PEDIU */
+.voltar {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    color: white;
+    background-color: #8B4513;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.voltar:hover {
+    background-color: #a0522d;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>🎂 Bolo Fofinho</h1>
+
+<h2>🎂Ingredientes:</h2>
+<ul>
+<li>2 ovos</li>
+<li>1 xícara de açúcar</li>
+<li>1 xícara de leite</li>
+<li>2 xícaras de farinha</li>
+<li>1 colher de fermento</li>
+</ul>
+
+<h2>👩‍🍳Modo de preparo:</h2>
+
+<p>1. Misture os ingredientes</p>
+<p>2. Coloque na forma</p>
+<p>3. Leve ao forno</p>
+
+<!-- BOTÃO -->
+ <button class="voltar" onclick="voltar()">⬅ Voltar</button>
+
+</div>
+<script>
+function voltar() {
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
